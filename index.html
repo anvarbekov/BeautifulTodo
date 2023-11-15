@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- --------------- css file link --------------- -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Beautiful tasks app</title>
+  </head>
+  <body>
+    <h1 class="date" id="date">hh:mm:ss, dd.mm.yyyy</h1>
+    <div class="container">
+      <form id="create__form" class="form__control" action="#">
+        <input
+          id="add__input"
+          class="add__input"
+          type="text"
+          maxlength="30"
+          placeholder="add tasks" />
+        <!-- <input class="add__input" type="text" placeholder="add tasks"> -->
+        <button style="border: none; background: transparent; outline: none; margin: 0;padding: 0;">
+          <img
+          id="add__btn"
+          class="add__btn"
+          src="https://images.freeimages.com/fic/images/icons/748/delikate_lite/512/add.png"
+          alt="" />
+        </button>
+      </form>
+      <p class="error hidden"></p>
+      <audio
+        id="error__effect"
+        src="audio/MA_Originals_GlitchyRobotics_V3.wav"></audio>
+      <table id="table" class="table">
+        <!-- <tr class="tasks">
+          <td class="task__left">
+            <img
+              class="avatar"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Arbcom_ru_ready.svg/1200px-Arbcom_ru_ready.svg.png"
+              alt="avatar" />
+            <h3 class="task__name">Muhammadnozim Anvarbekov</h3>
+          </td>
+          <td>
+            <p class="time">04:55:32, 13.11.2023</p>
+          </td>
+          <td class="task__right">
+            <img
+              class="task__icon edit"
+              src="https://icon-library.com/images/writing-icon-png/writing-icon-png-15.jpg"
+              alt="" />
+            <img
+              class="task__icon del"
+              src="https://cdn-icons-png.flaticon.com/512/4021/4021663.png"
+              alt="" />
+          </td>
+        </tr> -->
+      </table>
+    </div>
+
+    <div class="modal__box">
+      <div id="modal" class="modal hidden">
+        <h1 class="modal__name">Task Update</h1>
+        <form id="edit__form" action="#">
+          <input
+            class="add__input update__input"
+            type="text"
+            placeholder="add tasks" />
+          <p class="edit__error"></p>
+          <button id="updating__btn" class="update__btn">Update</button>
+        </form>
+      </div>
+    </div>
+
+    <div id="overlay" class="overlay hidden"></div>
+
+    <!-- ------------- js file link ------------- -->
+    <script src="js/app.js"></script>
+  </body>
+</html>

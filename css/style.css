@@ -1,0 +1,227 @@
+/* --------------- google fonts --------------- */
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Averia Serif Libre', serif;
+}
+
+::-webkit-scrollbar{
+    background: linear-gradient(-45deg, rgb(255, 0, 149), rgb(1, 252, 223));
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(-45deg, rgb(47, 255, 0), rgb(21, 18, 48));
+}
+
+body{
+    background-color: #222831;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    max-width: 998px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.form__control{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.add__input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: gold;
+    border-bottom: 1px solid gold;
+    font-size: 1.5rem;
+}
+
+.add__btn{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+.error, .edit__error{
+    color: crimson;
+}
+
+.date{
+    background: linear-gradient(-45deg, rgb(255, 0, 149), rgb(1, 252, 223));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+}
+
+/* ------------ table styles --------------- */
+.table{
+    width: 100%;
+}
+.tasks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(-45deg, rgb(255, 0, 149), rgb(1, 252, 223));
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 3px;
+}
+
+.ready{
+    background: linear-gradient(45deg, #012527, rgb(0, 75, 91));
+}
+
+.task__right{
+    text-decoration: none;
+}
+
+.animation__delete{
+    animation: delAnim 1s linear;
+}
+
+@keyframes delAnim {
+    0%{
+        transform: translateX(-50%);
+    }
+    25%{
+        transform: translateX(-75%);
+        opacity: 0.6;
+    }
+    50%{
+        transform: translateX(-85%);
+        opacity: 0.3;
+    }
+    75%{
+        transform: translateX(-100%);
+        opacity: 0.1;
+    }
+    100%{
+        transform: translateX(-120%);
+        opacity: 0;
+    }
+}
+
+.avatar{
+    width: 30px;
+    height: 30px;
+    /* border-radius: 50%;
+    border-bottom: 2px solid gold;
+    border-top: 2px solid rgba(4, 155, 255, 0.683);
+    border-left: 2px solid teal;
+    border-right: 2px solid rgb(1, 252, 135); */
+    cursor: pointer;
+}
+
+.task__icon{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.task__left{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+
+.task__name{
+    color: white;
+    font-size: 1.2rem;
+    width: 300px;
+}
+
+.task__name-input{
+    color: white;
+    width: 350px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+/* ------------- modal styles --------------- */
+
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    min-height: 200px;
+    border-radius: 10px;
+    background-color: #222831;
+    padding: 20px;
+    z-index: 100;
+}
+
+.modal__name{
+    text-align: center;
+    color: white;
+}
+
+.update__input{
+    margin: 10px auto; 
+}
+
+.update__btn{
+    padding: 5px 50px;
+    font-size: 1.2rem;
+    color: gold;
+    border: 1px solid gold;
+    background: transparent;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.time{
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(34, 34, 34, 0.5);
+    backdrop-filter: blur(3px);
+    z-index: 50;
+}  
+.hidden {
+    display: none;
+  }
