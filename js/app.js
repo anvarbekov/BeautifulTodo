@@ -51,14 +51,6 @@ function nowDate() {
 setInterval(nowDate, 1000);
 /* ------------------------ Date function ------------------------ */
 
-// avatar ready click event
-// avatars.forEach((avatar) => {
-//   avatar.addEventListener("click", (e) => {
-//     const li = e.target.parentElement.parentElement;
-//     li.classList.toggle("ready");
-//   });
-// });
-
 // error message function
 function errorMessage(where, message) {
   document.querySelector(where).classList.remove("hidden");
@@ -131,14 +123,6 @@ function adding() {
 formCreate.addEventListener("submit", () => {
   adding();
 });
-
-// editBtns.forEach((editBtn) => {
-//   editBtn.addEventListener("click", () => {
-//     // modal.classList.remove("hidden");
-//     // overlay.classList.remove("hidden");
-//     console.log("Edit modal");
-//   });
-// });
 
 function updating() {
   if (updateInput.value.trim() == "") {
