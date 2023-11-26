@@ -35,13 +35,13 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 
 .add__input {
   width: 100%;
-  padding: 10px;
-  margin: 10px 0;
+  padding: 0.625rem;
+  margin: 0.625rem 0;
   background: transparent;
   border: none;
   outline: none;
@@ -51,9 +51,9 @@ img {
 }
 
 .add__btn {
-  width: 50px;
-  height: 50px;
-  margin: 10px;
+  width: 3.125rem;
+  height: 3.125rem;
+  margin: 0.625rem;
   border-radius: 50%;
   box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.7);
   cursor: pointer;
@@ -69,7 +69,7 @@ img {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: white;
-  margin-top: 25px;
+  margin-top: 1.5625rem;
   text-align: center;
 }
 
@@ -84,8 +84,8 @@ img {
   background: linear-gradient(-45deg, rgb(255, 0, 149) 0%, teal 50%, rgb(255, 0, 149) 100%);
   background-size: 200% auto;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.7);
-  padding: 15px;
-  margin: 10px 0;
+  padding: 0.9375rem;
+  margin: 0.625rem 0;
   border-radius: 3px;
   transition: .5s ease;
 }
@@ -130,8 +130,8 @@ img {
 }
 
 .avatar {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   /* border-radius: 50%;
     border-bottom: 2px solid gold;
     border-top: 2px solid rgba(4, 155, 255, 0.683);
@@ -141,8 +141,8 @@ img {
 }
 
 .task__icon {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   object-fit: cover;
   border-radius: 50%;
   cursor: pointer;
@@ -151,18 +151,18 @@ img {
 .task__left {
   display: flex;
   align-items: center;
-  column-gap: 20px;
+  column-gap: 1.5625rem;
 }
 
 .task__name {
   color: white;
   font-size: 1.2rem;
-  width: 300px;
+  width: 12rem;
 }
 
 .task__name-input {
   color: white;
-  width: 350px;
+  width: 18.75rem;
   background: transparent;
   border: none;
   outline: none;
@@ -176,11 +176,11 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 600px;
-  min-height: 200px;
-  border-radius: 10px;
+  width: 37.5rem;
+  min-height: 12.5rem;
+  border-radius: 0.625rem;
   background-color: #222831;
-  padding: 20px;
+  padding: 1.25rem;
   z-index: 100;
 }
 
@@ -190,19 +190,19 @@ img {
 }
 
 .update__input {
-  margin: 10px auto;
+  margin: 0.625rem auto;
 }
 
 .update__btn {
-  padding: 5px 50px;
+  padding: 0.3125rem 3.125rem;
   font-size: 1.2rem;
   color: gold;
   border: 1px solid gold;
   background: transparent;
   border-radius: 5px;
   width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
   cursor: pointer;
 }
 
@@ -223,4 +223,11 @@ img {
 
 .hidden {
   display: none;
+}
+
+
+@media (max-width: 650px) {
+  html{
+    font-size: 10px;
+  }
 }
